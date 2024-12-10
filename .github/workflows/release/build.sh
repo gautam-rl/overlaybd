@@ -84,7 +84,7 @@ elif [[ ${OS} =~ "mariner" ]]; then
     DISTRO=${OS/:/.}
     PACKAGE_RELEASE="-DPACKAGE_RELEASE=${RELEASE_NO}.${DISTRO}"
 elif [[ ${OS} =~ "amazonlinux" ]]; then
-    yum install -y libaio-devel libcurl-devel openssl-devel libnl3-devel e2fsprogs-devel glibc-devel libzstd-devel binutils
+    yum install -y libaio-devel libcurl-devel openssl-devel libnl3-devel e2fsprogs-devel glibc-devel libzstd-devel binutils zlib-devel
     yum install -y rpm-build make git wget sudo tar gcc gcc-c++ autoconf automake libtool
 
     DISTRO=${OS/:/.}
