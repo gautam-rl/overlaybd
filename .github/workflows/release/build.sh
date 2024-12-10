@@ -92,13 +92,13 @@ elif [[ ${OS} =~ "amazonlinux" ]]; then
 fi
 
 if [[ ${ARCH} == "x86_64" ]]; then
-    wget --no-check-certificate https://cmake.org/files/v3.15/cmake-3.15.0-Linux-x86_64.tar.gz
-    tar -zxf cmake-3.15.0-Linux-x86_64.tar.gz -C /usr/local/
-    export PATH="/usr/local/cmake-3.15.0-Linux-x86_64/bin:$PATH"
+    wget https://cmake.org/files/v3.31/cmake-3.31.2-linux-x86_64.tar.gz
+    tar -zxf cmake-3.31.2-linux-x86_64.tar.gz -C /usr/local/
+    export PATH="/usr/local/cmake-3.31.2-linux-x86_64/bin:$PATH"
 else
-    wget --no-check-certificate https://cmake.org/files/v3.20/cmake-3.20.6-linux-aarch64.tar.gz
-    tar -zxf cmake-3.20.6-linux-aarch64.tar.gz -C /usr/local/
-    export PATH="/usr/local/cmake-3.20.6-linux-aarch64/bin:$PATH"
+    wget https://cmake.org/files/v3.31/cmake-3.31.2-linux-aarch64.tar.gz
+    tar -zxf cmake-3.31.2-linux-aarch64.tar.gz -C /usr/local/
+    export PATH="/usr/local/cmake-3.31.2-linux-aarch64/bin:$PATH"
 fi
 
 # Build
